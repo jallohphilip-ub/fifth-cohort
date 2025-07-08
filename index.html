@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Home Page</title>
+    <style>
+        /* Reset and base styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.6;
+          background-color: #f9f9f9;
+          color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+          background-color: #0a192f;
+          padding: 1rem 0;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+          flex-wrap: wrap;
+        }
+
+        nav a {
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 12px;
+          font-weight: 500;
+          transition: color 0.3s, background-color 0.3s;
+          padding: 8px 14px;
+          border-radius: 4px;
+        }
+
+        nav a:hover {
+          background-color: #112240;
+          color: #64ffda;
+        }
+
+        /* Main content */
+        main {
+          max-width: 1000px;
+          margin: 50px auto;
+          padding: 2rem;
+          background-color: #ffffff;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          border-radius: 8px;
+        }
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: #555;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          nav a {
+            margin: 8px 0;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Welcome to Our Professional Website</h1>
+    <p>
+        Thank you for visiting. Our website offers a full range of services tailored to your needs.
+        Use the navigation bar above to explore what we do, check out our portfolio, or get in touch with us.
+    </p>
+</main>
+
+</body>
+</html>
