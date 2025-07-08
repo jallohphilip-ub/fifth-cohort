@@ -2,9 +2,186 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Software Engineering</title>
+    <style>
+        /* Reset and base styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.6;
+          background-color: #f9f9f9;
+          color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+          background-color: #0a192f;
+          padding: 1rem 0;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+          flex-wrap: wrap;
+        }
+
+        nav a {
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 12px;
+          font-weight: 500;
+          transition: color 0.3s, background-color 0.3s;
+          padding: 8px 14px;
+          border-radius: 4px;
+        }
+
+        nav a:hover {
+          background-color: #112240;
+          color: #64ffda;
+        }
+
+        /* Main content */
+        main {
+          max-width: 1000px;
+          margin: 50px auto;
+          padding: 2rem;
+          background-color: #ffffff;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          border-radius: 8px;
+        }
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          color: #0a192f;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          margin: 1.5rem 0 1rem;
+          color: #112240;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: #555;
+          margin-bottom: 1rem;
+        }
+
+        ul {
+          margin-bottom: 1.5rem;
+          padding-left: 2rem;
+        }
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+
+        .skills-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          margin: 1.5rem 0;
+        }
+
+        .skill-pill {
+          background-color: #0a192f;
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-size: 0.9rem;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          nav a {
+            margin: 8px 0;
+          }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+    <main>
+    <div class="container">
+    <h1>Software Engineering FAQs</h1>
 
+    <div class="faq">
+      <h3>1. What is software engineering?</h3>
+      <p>Software engineering is the systematic approach to the development, operation, maintenance, and retirement of software using engineering principles.</p>
+    </div>
+
+    <div class="faq">
+      <h3>2. What's the difference between software engineering and programming?</h3>
+      <p>Programming is the act of writing code, while software engineering involves planning, designing, testing, and maintaining software systems — it’s broader and more structured.</p>
+    </div>
+
+    <div class="faq">
+      <h3>3. Which languages are important in software engineering?</h3>
+      <p>Languages like Python, Java, JavaScript, C++, and Go are commonly used, depending on the field — backend, frontend, mobile, or systems development.</p>
+    </div>
+
+    <div class="faq">
+      <h3>4. Do I need a degree to become a software engineer?</h3>
+      <p>No, but a degree helps. Many successful engineers are self-taught or went through bootcamps. What's essential is skill, portfolio, and consistency.</p>
+    </div>
+
+    <div class="faq">
+      <h3>5. What are the best practices for writing clean code?</h3>
+      <p>Use meaningful names, keep functions short, comment only when necessary, and follow a consistent code style. Always prioritize readability.</p>
+    </div>
+
+    <div class="faq">
+      <h3>6. What is version control and why is Git important?</h3>
+      <p>Version control helps manage code changes and collaborate with others. Git is the most widely used system, allowing you to track history, branch, and merge code safely.</p>
+    </div>
+
+    <div class="faq">
+      <h3>7. What tools do software engineers use?</h3>
+      <p>Popular tools include GitHub, VS Code, Docker, Postman, JIRA, and cloud platforms like AWS or Azure depending on the project.</p>
+    </div>
+
+    <div class="faq">
+      <h3>8. How do I stay updated in the software industry?</h3>
+      <p>Follow tech blogs, GitHub repos, YouTube channels, attend meetups/webinars, and join communities on Twitter, Reddit, or Stack Overflow.</p>
+    </div>
+
+    <main>
+    <div class="faq">
+        <h3 style="text-align: center;">Still have questions?</h3>
+        <p style="text-align: center;">If you have more questions or need deeper insight on a particular topic, feel free to <a href="contact.html">Contact Us</a>. <br>We're here to help! <br>Always feel free to feed your curiosity</p>
+    </div>
+    </main>
+
+    <div class="footer">
+      &copy; 2025 Software Engineering Insights - CULLED BY GIFTY HEMANS
+    </div>
+  </div>
+</main>
 </body>
 </html>
