@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>John Strange | Portfolio</title>
+  <title>StrangeTech Solutions</title>
 
   <style>
-    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -14,50 +13,80 @@
     }
 
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #000;
       color: #fff;
       line-height: 1.6;
       padding: 20px;
     }
 
-    header.hero {
+    nav {
+      background: #111;
+      padding: 15px 0;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+
+    nav ul li a:hover, nav ul li a:focus {
+      background: #222;
+      color: #00ffe7;
+    }
+
+    header {
       text-align: center;
       margin-bottom: 40px;
     }
 
-    header.hero h1 {
+    header h1 {
       font-size: 3em;
-      margin-bottom: 10px;
       letter-spacing: 2px;
+      margin-bottom: 10px;
     }
 
-    header.hero p {
+    header p {
       font-size: 1.2em;
-      color: #bbb;
+      color: #aaa;
     }
 
     section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     h2 {
       font-size: 2em;
-      margin-bottom: 20px;
       border-bottom: 1px solid #fff;
+      margin-bottom: 20px;
       padding-bottom: 10px;
     }
 
-    .project {
+    .service, .project {
       margin-bottom: 20px;
     }
 
-    .project h3 {
-      font-size: 1.5em;
+    .service h3, .project h3 {
+      font-size: 1.4em;
       margin-bottom: 5px;
     }
 
-    .project p {
+    .service p, .project p {
       color: #ccc;
     }
 
@@ -76,45 +105,76 @@
 </head>
 
 <body>
-  <header class="hero">
-    <h1>John Strange</h1>
-    <p>Graphic Designer | Web Developer | Educator</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#faq">faq</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>StrangeTech Solutions</h1>
+    <p>Innovative Software. Intelligent Systems. Impactful Results.</p>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
+  <section class="about" id="about">
+    <h2>About Us</h2>
     <p>
-      I'm a creative professional with a passion for clean, user-centered design and functional web development. I specialize in branding, UI/UX, and educational technology.
+      StrangeTech Solutions is a black-owned software company specializing in custom software development, AI-powered systems, and enterprise-grade digital products. We empower businesses through scalable and secure solutions tailored for performance and impact.
     </p>
   </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
+  <section class="services" id="services">
+    <h2>Our Services</h2>
 
-    <div class="project">
-      <h3>AI Documentation Tool</h3>
-      <p>Python-based system that auto-generates software documentation using Google AI models.</p>
+    <div class="service">
+      <h3>Custom Software Development</h3>
+      <p>We design and build scalable software systems for SMEs, startups, and enterprises across Africa and beyond.</p>
     </div>
 
-    <div class="project">
-      <h3>UNIMAK Innovation Hub Website</h3>
-      <p>React-based platform for showcasing startup incubation and tech workshops in Sierra Leone.</p>
+    <div class="service">
+      <h3>AI & Machine Learning Solutions</h3>
+      <p>From predictive analytics to intelligent automation, we deploy machine learning models for real-world use cases.</p>
     </div>
 
-    <div class="project">
-      <h3>Secure Chat SDK</h3>
-      <p>End-to-end encrypted SDK for AI-human chat privacy built in FastAPI and React.</p>
+    <div class="service">
+      <h3>Web & Mobile App Development</h3>
+      <p>We create responsive websites and cross-platform mobile apps with intuitive UI/UX design and robust backend logic.</p>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: johnstrange@example.com</p>
-    <p>LinkedIn: linkedin.com/in/johnstrange</p>
+  <section class="projects" id="projects">
+    <h2>Recent Projects</h2>
+
+    <div class="project">
+      <h3>EduMentor AI</h3>
+      <p>An intelligent tutoring system helping students manage mental health and academic stress through personalized AI tips.</p>
+    </div>
+
+    <div class="project">
+      <h3>SierraSecure Chat SDK</h3>
+      <p>A lightweight end-to-end encryption SDK/API for privacy-first communication between humans and AI bots.</p>
+    </div>
+
+    <div class="project">
+      <h3>Startup Portal - UNIMAK Innovation Hub</h3>
+      <p>Custom-built portal for startup incubation, mentorship, and entrepreneurship programs in Sierra Leone.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@strangetech.com</p>
+    <p>Phone: +232 76 000 000</p>
+    <p>Location: Makeni, Sierra Leone</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 John Strange. All rights reserved.</p>
+    <p>&copy; 2025 StrangeTech Solutions. All rights reserved.</p>
   </footer>
 </body>
 </html>
