@@ -52,58 +52,61 @@
 
         /* Main content */
         main {
-          max-width: 1000px;
-          margin: 50px auto;
-          padding: 2rem;
-          background-color: #ffffff;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-          border-radius: 8px;
-        }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
 
-        h1 {
-          font-size: 2rem;
-          margin-bottom: 1rem;
-        }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-        p {
-          font-size: 1.1rem;
-          color: #555;
-        }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
 
-        /* Responsive Navigation */
-        @media (max-width: 768px) {
-          nav {
-            flex-direction: column;
-            align-items: flex-start;
-          }
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-          nav a {
-            margin: 8px 0;
-          }
-        }
-    </style>
+    .btn {
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+  </style>
 </head>
 <body>
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-    </nav>
-</header>
+  <main>
+    <h1>Welcome to My Website</h1>
+    <p>This is the home page. Use the buttons below to explore.</p>
 
-<main>
-    <h1>Welcome to Our Professional Website</h1>
-    <p>
-        Thank you for visiting. Our website offers a full range of services tailored to your needs.
-        Use the navigation bar above to explore what we do, check out our portfolio, or get in touch with us.
-    </p>
-</main>
+    <div class="button-group">
+      <button class="btn" onclick="location.href='about.html'">About Us</button>
+      <button class="btn" onclick="location.href='services.html'">Services</button>
+      <button class="btn" onclick="location.href='contact.html'">Contact</button>
+    </div>
+  </main>
 
 </body>
 </html>
